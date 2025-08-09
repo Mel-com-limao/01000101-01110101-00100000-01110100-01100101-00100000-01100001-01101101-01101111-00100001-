@@ -15,12 +15,16 @@ a:hover {
     text-decoration: underline;
 }
 
-.Menu ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+ nav {
+  background: #6a040f;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
 }
 
-.Menu li{
-    list-style: none ;
+nav a {
+  color: #ae2012;
+  text-decoration: none;
+  font-weight: bold;
 }
