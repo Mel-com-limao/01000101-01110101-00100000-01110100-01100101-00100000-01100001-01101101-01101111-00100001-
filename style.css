@@ -16,10 +16,11 @@ a:hover {
 }
 
 header {
-  background-color: #540b0e;
-  color: white;
-  padding: 20px;
-  text-align: center;
+    width: 100%;
+    background-color: #540b0e;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
  nav {
