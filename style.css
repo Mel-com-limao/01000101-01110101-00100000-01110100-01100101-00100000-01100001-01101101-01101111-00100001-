@@ -15,8 +15,15 @@ a:hover {
     text-decoration: underline;
 }
 
+header {
+  background-color: #6a040f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
  nav {
-  background: #6a040f;
+  background: white;
   display: flex;
   justify-content: center;
   gap: 20px;
