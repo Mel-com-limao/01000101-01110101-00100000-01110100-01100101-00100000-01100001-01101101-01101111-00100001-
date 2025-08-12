@@ -36,3 +36,44 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.quiz-container {
+    background-color: rgba(255, 255, 255, 0.9); /* fundo branco com transparência */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.quiz-container input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.quiz-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #540b0e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quiz-container button:hover {
+    background-color: #7b1216;
+}
+
