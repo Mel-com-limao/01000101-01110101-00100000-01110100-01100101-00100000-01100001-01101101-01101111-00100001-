@@ -77,7 +77,7 @@ main {
     background-color: #7b1216;
 }
 
-.conteudo-central {
+conteudo-central {
   display: flex;
   justify-content: center;
   align-items: flex-start; /* para ficar logo abaixo do header */
@@ -85,7 +85,7 @@ main {
   min-height: calc(100vh - 120px); /* ocupa o espaço visível abaixo do header */
 }
 
-.surpresa-container {
+surpresa-container {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 15px;
@@ -95,7 +95,7 @@ main {
   width: 100%;
 }
 
-.surpresa-container input[type="password"] {
+surpresa-container input[type="password"] {
   padding: 10px;
   font-size: 1em;
   width: 80%;
@@ -104,7 +104,7 @@ main {
   border-radius: 8px;
 }
 
-.surpresa-container button {
+surpresa-container button {
   padding: 10px 20px;
   font-size: 1em;
   background-color: #540b0e;
@@ -114,6 +114,6 @@ main {
   cursor: pointer;
 }
 
-.surpresa-container button:hover {
+surpresa-container button:hover {
   background-color: #7b1216;
 }
