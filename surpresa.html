@@ -18,17 +18,18 @@
             <a href="surpresa.html">Surpresa</a>
         </nav>
     </header>
-    <main style="height: 100vh;">
-    <p>Digite a senha para desbloquear a surpresa:</p>
-    <input type="password" id="senha" placeholder="Digite a senha">
-    <button onclick="verificaSenha()">Entrar</button>
-    <p id="erro" style="color:red;"></p>
+    <main class="conteudo-central">
+    <div class="surpresa-container">
+      <p>Digite a senha para desbloquear a surpresa:</p>
+      <input type="password" id="senha" placeholder="Digite a senha" />
+      <button onclick="verificaSenha()">Entrar</button>
+      <p id="erro" style="color: red;"></p>
 
-    <div id="conteudo" style="display:none;">
-      <h2>🎵 Sua surpresa chegou!</h2>
-      <p>Essa música é só pra você...</p>
-      <!-- Troque pelo link do seu cover -->
-      <iframe width="400" height="300" src="https://www.youtube.com/embed/G54vSrIxQDA?si=420kPbiXTZdjuiZQ" frameborder="0" allowfullscreen></iframe>
+      <div id="conteudo" style="display: none;">
+        <h2>🎵 Sua surpresa chegou!</h2>
+        <p>Essa música é só pra você...</p>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/G54vSrIxQDA?si=420kPbiXTZdjuiZQ" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
   </main>
 </body>
