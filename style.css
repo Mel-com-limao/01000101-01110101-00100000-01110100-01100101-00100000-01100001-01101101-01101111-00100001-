@@ -127,7 +127,7 @@ surpresa-container button:hover {
     text-align: center;
     max-width: 500px;
     width: 90%;
-    margin-top: 20px; /* Espaço acima do container */
+    margin-top: 10px; /* Espaço acima do container */
 }
 ul {
     list-style-type: none; /* Remove marcadores da lista */
