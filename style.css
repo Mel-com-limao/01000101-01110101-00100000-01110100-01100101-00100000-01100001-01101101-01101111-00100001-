@@ -39,9 +39,10 @@ nav a {
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
+    flex-direction: column; /* Altera para coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 40px 20px;
+    min-height: calc(100vh - 120px); /* Ocupa o espaço visível abaixo do header */
 }
 
 quiz-container {
