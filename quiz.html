@@ -17,31 +17,30 @@
             <a href="surpresa.html">Surpresa</a>
         </nav>
     </header>
-    <main style="height: 100vh;">
-        <p><strong>Pergunta:</strong> Em qual mês a gente começou a ficar?</p>
-        <input type="text" id="resposta" />
-        <button onclick="verificar()">Responder</button>
-        <p id="resultado"></p>
-        <p id="pista" style="display: none;">
-            <strong>Pista 2:</strong> A senha termina com <code>MESES</code>
-        </p>
+    <main class="conteudo-central">
+        <div class="quiz-container">
+            <p><strong>Pergunta:</strong> Em qual mês a gente começou a ficar?</p>
+            <input type="text" id="resposta" />
+            <button onclick="verificar()">Responder</button>
+            <p id="resultado"></p>
+            <p id="pista" style="display: none;">
+                <strong>Pista 2:</strong> A senha termina com <code>MESES</code>
+            </p>
+        </div>
     </main>
-
-  
-  <script>
-    function verificar() {
-      const resposta = document.getElementById("resposta").value.toLowerCase();
-      const resultado = document.getElementById("resultado");
-      const pista = document.getElementById("pista");
-
-      if (resposta === "março") {
-        resultado.textContent = "Acertou! ♥";
-        pista.style.display = "block";
-      } else {
-        resultado.textContent = "Hmm... tenta de novo.";
-        pista.style.display = "none";
-      }
-    }
-  </script>
+    <script>
+        function verificar() {
+            const resposta = document.getElementById("resposta").value.toLowerCase();
+            const resultado = document.getElementById("resultado");
+            const pista = document.getElementById("pista");
+            if (resposta === "março") {
+                resultado.textContent = "Acertou! ♥";
+                pista.style.display = "block";
+            } else {
+                resultado.textContent = "Hmm... tenta de novo.";
+                pista.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
