@@ -64,17 +64,30 @@ ul {
     margin: 0; /* Remove margin padrão */
 }
 
-quiz-container {
-    background-color: rgba(255, 255, 255, 0.9); /* fundo branco com transparência */
+.surpresa-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     max-width: 500px;
     width: 90%;
+    margin-top: 20px; /* Espaço acima do container */
 }
 
-quiz-container input[type="text"] {
+.quiz-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    margin-top: 20px; /* Espaço acima do container */
+}
+
+.quiz-container input[type="text"],
+.surpresa-container input[type="password"] {
     padding: 10px;
     font-size: 1em;
     width: 80%;
@@ -83,7 +96,8 @@ quiz-container input[type="text"] {
     border-radius: 8px;
 }
 
-quiz-container button {
+.quiz-container button,
+.surpresa-container button {
     padding: 10px 20px;
     font-size: 1em;
     background-color: #540b0e;
@@ -93,48 +107,7 @@ quiz-container button {
     cursor: pointer;
 }
 
-quiz-container button:hover {
+.quiz-container button:hover,
+.surpresa-container button:hover {
     background-color: #7b1216;
 }
-
-conteudo-central {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* para ficar logo abaixo do header */
-  padding: 40px 20px;
-  min-height: calc(100vh - 120px); /* ocupa o espaço visível abaixo do header */
-}
-
-surpresa-container {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  max-width: 500px;
-  width: 100%;
-}
-
-surpresa-container input[type="password"] {
-  padding: 10px;
-  font-size: 1em;
-  width: 80%;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-surpresa-container button {
-  padding: 10px 20px;
-  font-size: 1em;
-  background-color: #540b0e;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-surpresa-container button:hover {
-  background-color: #7b1216;
-}
-
