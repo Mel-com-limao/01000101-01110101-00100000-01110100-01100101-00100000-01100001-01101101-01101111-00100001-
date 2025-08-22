@@ -1,6 +1,6 @@
 function verificaSenha() {
   const senha = document.getElementById("senha").value;
-  const correta = "05MESES";
+  const correta = "05MESESFELIZES";
 
   if (senha.toUpperCase() === correta) {
     document.getElementById("conteudo").style.display = "block";
