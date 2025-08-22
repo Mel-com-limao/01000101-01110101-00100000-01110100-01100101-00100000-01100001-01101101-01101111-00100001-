@@ -19,28 +19,50 @@
     </header>
     <main class="conteudo-central">
         <div class="quiz-container">
-            <p><strong>Pergunta:</strong> Em qual mês a gente começou a ficar?</p>
+            <p id="pergunta"></p>
             <input type="text" id="resposta" />
             <button onclick="verificar()">Responder</button>
             <p id="resultado"></p>
             <p id="pista" style="display: none;">
-                <strong> 💜:</strong> 00110000 00110101  <code>05</code>
+                <strong>💜:</strong> 00110000 00110101
             </p>
         </div>
     </main>
     <script>
+        const perguntas = [
+            { pergunta: "Em qual mês a gente começou a ficar?", resposta: "Março" },
+            { pergunta: "O pokémon que iniciou nossa história?", resposta: "Pikachu" },
+            { pergunta: "Você é meu Sol, então eu sou sua?", resposta: "Lua" },
+            { pergunta: "Qual o nome do urso de pelúcia que você me deu?", resposta: "Freedy" },
+            { pergunta: "Sua cor favorita + a minha cor favorita = ?", resposta: "Roxo" }
+        ];
+        
+        let indicePergunta = 0;
+        
+        function carregarPergunta() {
+               const perguntaElement = document.getElementById("pergunta");
+            perguntaElement.textContent = perguntas[indicePergunta].pergunta;
+        }
+        
         function verificar() {
             const resposta = document.getElementById("resposta").value.toLowerCase();
             const resultado = document.getElementById("resultado");
             const pista = document.getElementById("pista");
-            if (resposta === "março") {
+            if (resposta === perguntas[indicePergunta].resposta) {
                 resultado.textContent = "Acertou! ♥";
-                pista.style.display = "block";
+                indicePergunta++;
+                if (indicePergunta < perguntas.length) {
+                    carregarPergunta();
+                    document.getElementById("resposta").value = ""; // Limpa a resposta
+                } else {
+                    pista.style.display = "block"; // Mostra a pista após a última pergunta
+                }
             } else {
                 resultado.textContent = "Hmm... tenta de novo.";
-                pista.style.display = "none";
             }
         }
+        // Carrega a primeira pergunta ao iniciar
+        carregarPergunta();
     </script>
 </body>
 </html>
